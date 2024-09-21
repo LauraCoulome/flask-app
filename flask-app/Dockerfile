@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
-COPY app.py .
+COPY src/app.py .
 
 # Set an environment variable
 ARG APP_ENV=development
